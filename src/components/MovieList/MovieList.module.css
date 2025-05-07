@@ -1,0 +1,46 @@
+.bigBox {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.title:hover {
+  color: rgb(55, 137, 109);
+}
+.poster {
+  border-radius: 12px;
+  height: 250px;
+  width: 200px;
+}
+.poster:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.posterWraper{
+  width: 230px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692); 
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+    /* margin: 20px; */
+}

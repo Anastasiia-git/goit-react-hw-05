@@ -1,0 +1,84 @@
+.img {
+  width: 450px;
+  height: 300px;
+  object-fit: fill;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692); 
+}
+.title {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.data {
+    font-size: 20px;
+    color: rgb(43, 165, 226);
+}
+.span {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.overBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692); 
+    border-radius: 12px;
+    margin: 20px;
+}
+.smallBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+.genresBox {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+.titleInfo {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: rgb(55, 137, 109);
+    margin-bottom: 20px;
+}
+.cast {
+    font-size: 20px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.cast:hover,
+.cast:focus {
+    color: rgb(55, 137, 109);
+}
+.infoBox {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692); 
+    border-radius: 12px;
+    margin: 20px;
+    padding: 10px;
+}
+.back{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692); 
+    border-radius: 12px;
+    padding: 10px;
+}
+.backBox {
+    margin: 20px;
+    width: 120px;
+}
+.backBox:hover,
+.backBox:focus {
+    color: rgb(55, 137, 109);
+}

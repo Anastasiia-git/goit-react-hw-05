@@ -1,0 +1,33 @@
+.img {
+    width: 135px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692); 
+}
+.name {
+    font-size: 20px;
+    color: rgb(43, 165, 226);
+    display: flex;
+    flex-wrap: wrap;
+}
+.character{
+    font-size: 17px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px;
+}

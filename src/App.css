@@ -1,0 +1,42 @@
+body {
+  background-color: #4d2424;
+  color: azure;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 360px;
+  height: 200px;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+}

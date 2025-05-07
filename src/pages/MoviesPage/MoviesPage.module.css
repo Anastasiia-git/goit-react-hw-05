@@ -1,0 +1,46 @@
+.box {
+  padding: 20px ;
+  margin-bottom: 40px;
+  background-color: rgb(55, 137, 109);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+padding: 5px 10px;
+width: 220px;
+height: 30px;
+border: 0;
+
+border: 2px solid transparent;
+border-radius: 20px;
+}
+.btn {
+display: flex;
+justify-content: center;
+align-items: center;
+
+margin-left: 10px;
+background-color:  #3b2496;
+border-radius: 4px;
+border: 0;
+width: 70px;
+height: 30px;
+
+  color: white;
+  border-radius: 20px;
+
+}
+
+.btn:hover {
+background-color: aliceblue;
+color:  #3b2496;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
