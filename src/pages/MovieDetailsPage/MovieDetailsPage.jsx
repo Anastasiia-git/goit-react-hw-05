@@ -5,7 +5,7 @@ import {
   useParams,
   useLocation,
 } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { getDetail } from "../../services/api";
 import { IMG_BASE_URL } from "../../services/api";
 import s from "./MovieDetailsPage.module.css";
