@@ -1,13 +1,12 @@
 import { getReviews } from "../../services/api";
 import { useParams } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import s from "./MovieReviews.module.css";
 
 function MovieReviews() {
   const { movieId } = useParams();
   const [movies, setMovies] = useState({});
   const [reviews, setReviews] = useState([]);
-  const isFirstRender = useRef(true);
 
 useEffect(() => {
   const getMovieReviews = async () => {
@@ -21,10 +20,7 @@ useEffect(() => {
       console.log(error);
     }
   };
-  if (isFirstRender.current) {
-    isFirstRender.current = false;
-    return;
-  }
+
   getMovieReviews();
 }, [movieId]);
 

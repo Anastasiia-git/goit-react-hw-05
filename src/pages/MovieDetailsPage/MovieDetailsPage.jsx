@@ -5,7 +5,7 @@ import {
   useParams,
   useLocation,
 } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { getDetail } from "../../services/api";
 import { IMG_BASE_URL } from "../../services/api";
 import s from "./MovieDetailsPage.module.css";
@@ -16,7 +16,6 @@ function MovieDetailsPage() {
   const [genres, setGenres] = useState([]);
   const location = useLocation();
   const goBackRef = useRef(location.state ?? "/movies");
-  const isFirstRender = useRef(true);
 
   useEffect(() => {
     const getMovieDetails = async () => {
@@ -30,10 +29,7 @@ function MovieDetailsPage() {
         console.log(error);
       }
     };
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+
     getMovieDetails();
   }, [movieId]);
 

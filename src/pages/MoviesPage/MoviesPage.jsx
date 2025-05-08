@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { searchMovies } from "../../services/api";
 import toast, { Toaster } from "react-hot-toast";
@@ -12,7 +12,6 @@ function MoviesPage() {
   const [searchQuery, setSearchQuery] = useState(""); 
   const [searchParams, setSearchParams] = useSearchParams();
   const searchParam = searchParams.get("search") ?? "";
-  const isFirstRender = useRef(true);
 
   useEffect(() => {
     const getMovies = async () => {
@@ -33,10 +32,7 @@ function MoviesPage() {
         setLoading(false);
       }
     };
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+
     getMovies();
   }, [searchParam]);
 

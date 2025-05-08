@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { getTrendingMovies } from "../../services/api";
 import MovieList from "../../components/MovieList/MovieList";
 import Loader from "../../components/Loader/Loader";
@@ -7,7 +7,6 @@ import s from "./HomePages.module.css"
 function HomePages() {
   const [hits, setHits] = useState([]);
   const [loading, setLoading] = useState(false);
-  const isFirstRender = useRef(true);
 
   useEffect(() => {
     const getTrendingData = async () => {
@@ -21,10 +20,6 @@ function HomePages() {
         setLoading(false);
       }
     };
-     if (isFirstRender.current) {
-       isFirstRender.current = false;
-       return;
-     }
     getTrendingData();
   }, []);
 

@@ -1,6 +1,6 @@
 import { getCast } from "../../services/api";
 import { useParams } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { IMG_BASE_URL } from "../../services/api";
 import s from "./MovieCast.module.css"
 
@@ -8,7 +8,6 @@ function MovieCast() {
   const { movieId } = useParams();
   const [movies, setMovies] = useState({});
   const [actors, setActors] = useState([]);
-  const isFirstRender = useRef(true);
 
 useEffect(() => {
   const getMovieCast = async () => {
@@ -22,10 +21,7 @@ useEffect(() => {
       console.log(error);
     }
   };
-  if (isFirstRender.current) {
-    isFirstRender.current = false;
-    return;
-  }
+
   getMovieCast();
 }, [movieId]);
 
